@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="3dp"
+    android:background="@drawable/grid_item_bg">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="@null" />
+
+    <!-- Speaker badge shown only when item.hasAudio is true -->
+    <ImageView
+        android:id="@+id/audioBadge"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="4dp"
+        android:background="@drawable/badge_circle_bg"
+        android:contentDescription="@null"
+        android:padding="3dp"
+        android:src="@drawable/ic_volume"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/favoriteBadge"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="4dp"
+        android:background="@drawable/badge_circle_bg"
+        android:contentDescription="@null"
+        android:padding="3dp"
+        android:src="@drawable/ic_star_filled"
+        android:visibility="gone" />
+
+</FrameLayout>

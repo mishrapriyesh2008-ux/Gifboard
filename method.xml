@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Declares this service as an Input Method to the system.
+  isDefault="false" so it never silently replaces the user's existing keyboard;
+  they opt in via Settings > Languages & input > Virtual keyboard, same as Gboard does.
+-->
+<input-method xmlns:android="http://schemas.android.com/apk/res/android"
+    android:settingsActivity="com.example.gifkeyboard.ui.SetupActivity"
+    android:isDefault="false" />

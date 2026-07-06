@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/keyboard_bg"
+    android:orientation="vertical">
+
+    <!-- Tab strip: ABC | GIF | Recent | Favorites -->
+    <LinearLayout
+        android:id="@+id/tabStrip"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/media_tab_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tabKeys"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tab_keys"
+            android:textColor="@color/accent"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tabMedia"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tab_media"
+            android:textColor="@color/key_text" />
+
+        <TextView
+            android:id="@+id/tabRecent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tab_recent"
+            android:textColor="@color/key_text" />
+
+        <TextView
+            android:id="@+id/tabFavorites"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tab_favorites"
+            android:textColor="@color/key_text" />
+    </LinearLayout>
+
+    <!-- Content area: only one of these two is visible at a time -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/qwertyContainer"
+            layout="@layout/keyboard_qwerty" />
+
+        <include
+            android:id="@+id/mediaContainer"
+            layout="@layout/keyboard_media_tab"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

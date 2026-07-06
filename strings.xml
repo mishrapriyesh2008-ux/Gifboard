@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">GifBoard</string>
+    <string name="setup_title">Set up GifBoard</string>
+    <string name="setup_step1">1. Enable GifBoard in system keyboard settings</string>
+    <string name="setup_step2">2. Switch to GifBoard from any text field</string>
+    <string name="enable_keyboard">Enable Keyboard</string>
+    <string name="search_hint">Search GIFs &amp; clips…</string>
+    <string name="tab_keys">ABC</string>
+    <string name="tab_media">GIF</string>
+    <string name="tab_recent">Recent</string>
+    <string name="tab_favorites">★</string>
+    <string name="send_unsupported_fallback">This app can\'t receive clips directly — sharing instead.</string>
+    <string name="no_results">No results. Try a different search.</string>
+    <string name="loading">Loading…</string>
+    <string name="category_trending">Trending</string>
+    <string name="category_reactions">Reactions</string>
+    <string name="category_funny">Funny</string>
+    <string name="category_love">Love</string>
+    <string name="category_celebrate">Celebrate</string>
+</resources>
